@@ -3,17 +3,20 @@
     <head>
         <meta charset="UTF-8"/>
         <title>Adilgereev CV</title>
-        <link rel="stylesheet" href="favicon.ico">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
-        <table>
-            <tr>
-                <td>   
-                    <img src="Me.jpg" width="350">
-                </td>
-                <td>
+        <div class="container">
+        <div class="intro">
+        
+            
+                   
+                    <img src="Me.jpg" alt="Здесь должна быть фотка меня" class="PhotoMe"/>
+                
+                <div class="info-text">
                     <h1>Адилгереев Артем Максимович</h1>
-                    <p><em>Мужчина, 19 лет, родился 15 октября 2002</em></p>
+                    <p>Мужчина, 19 лет, родился 15 октября 2002</p>
                     <h2>Контакты:</h2>
                   <ul>
                     <li>+7(930)983-69-93</li>
@@ -22,23 +25,28 @@
                     <p>Москва, не готов к переезду, готов к командировкам за границу</p>
                     <p>Указан примерный район поиска работы:</p>
                     <a href="map.html"target="_blank">Показать карту</a>
-                </td>
-            </tr>
-        </table>
+                </div>
+            
+        
+        </div>
         
         
-        <hr>
+        
+    <div class="card bg-blue">
         <h2>Front-end разработчик Typescript & Reactjs &nbsp;&nbsp;&nbsp; 100 000 рублей</h2>
         <p><strong>Специализации:</strong></p>
-        <ol>
+        <ol class="list">
         <li>Программист, разработчик</li>
         <li>Очень мощный чел</li>
         </ol>
         <p>Занятость: частичная занятость, проектная работа, полная занятость </p>
         <p>График работы: гибкий график, удаленная работа, работа в офисе</p>
-        <hr>
+    </div>
+        
+
+    <div class="card bg-yellow" >    
         <h2>Опыт работы</h2>
-        <table>
+        <table class="table">
            <tr>
             <td><strong>Июль 2018 - Июль 2018</strong></td>
             <td>Ресторан Узбечка</td>
@@ -49,7 +57,7 @@
            </tr>
            <tr>
             <td></td>
-            <td>Таскал тарелки на мойку, 1 раз подлил чай посетителю</td>
+            <td >Таскал тарелки на мойку, 1 раз подлил чай посетителю</td>
            </tr>
            <tr>
             <td><strong>Июль 2021 - Август 2021</strong></td>
@@ -61,7 +69,7 @@
            </tr>
            <tr>
             <td></td>
-            <td>Продавал услуги, телефоны и сим-карты. Работал в системе 1С.</td>
+            <td >Продавал услуги, телефоны и сим-карты. Работал в системе 1С.</td>
            </tr>
            <tr>
             <td><strong>Июнь 2022 - настоящее время</strong></td>
@@ -76,7 +84,9 @@
             <td>Телемаркетинг. Работа в CRM системе, коммуникация с людьми.</td>
            </tr>
         </table>
-        <hr>
+    </div>
+        
+        <div class="card bg-purple">
         <h2>Ключевые навыки</h2>
         <ul type="circle">
         <li> C++</li>
@@ -90,8 +100,9 @@
         <li>ООП</li>
         <li>QUDA</li>
     </ul>
-    <hr>
+</div>
     
+    <div class="card bg-green" >
     <h2>Обо мне</h2>
     <span>Мой профиль на github:</span>
     <a href="https://github.com/3elt3er/" target="_blank">Нажми</a></li>
@@ -100,7 +111,9 @@
     на котором у меня был первый проект - игра. После пошёл на курсы по веб-дизайну, на которых создавал сайты через 
     макеты. В дальнейшем занимался программированием только в формате школьных заданий. После, были проекты в унивеситете 
      - создание базы данныхдля поликлиники - учёт людей с прививками и флюрографией и т.д. устал писать какой я хороший.</p>
-     <hr>
+    </div>
+     
+     <div class="card bg-orange">
      <h2>Высшее образование(Бакалавр)</h2>
      <table>
         <tr>
@@ -112,29 +125,38 @@
             <td>Кибернетика и информационная безопасность, Информационная безопасность</td>
         </tr>
      </table>
-     <hr>
+    </div>
+     
+     <div class="card bg-red">
      <h2>Знание языков</h2>
      <p>Русский - Родной</p>
      <p>Английский - В2 - Самодостаточное</p>
-     <hr>
+    </div>
+     
+     <div class="contact">
      <h2>Связаться со мной</h2>
      <form action="/">
+        <div class="row">
+    <div class="form-group">
         <label for="name">Ваше имя:</label>
         <input type="text" id ="name"
         placeholder="Введите ваше имя...">
-        <br>
-        <br>
-        
+    </div>
+      <div class="form-group">
         <label for="email">Ваш Email:</label>
         <input type="email" id="email" placeholder="Введите email...">
-        
-        <br>
-        <br>
-
+      </div>
+    </div>
+      <div class="form-group">
+    
         <label for="text">Ваше сообщение:</label>
         <textarea id="text" cols="50" rows="5"></textarea>
-
-        <input type="submit" value="Отправить">
+      </div>
+    
+        <input class="button" type="submit" value="Отправить">
+    
      </form>
+    </div>
+</div>
 </body>
 </html>
