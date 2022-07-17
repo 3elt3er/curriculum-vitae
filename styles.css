@@ -19,7 +19,7 @@ body {
     margin-bottom: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     .intro {
         text-align: center;
         display: block;
