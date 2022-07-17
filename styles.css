@@ -19,7 +19,7 @@ body {
     margin-bottom: 20px;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 900px) {
     .intro {
         text-align: center;
         display: block;
@@ -36,6 +36,7 @@ body {
     max-width: 750px;
     margin: auto;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 a {
@@ -62,27 +63,27 @@ a:visited {
 }
 
 .bg-green {
-    background: rgba(0, 255, 0, 0.2);
+    background: rgba(0, 255, 0, 0.25);
 }
 
 .bg-yellow {
-    background: rgba(255, 255, 0, 0.2);
+    background: rgba(255, 255, 0, 0.25);
 }
 
 .bg-blue {
-    background: rgba(0, 0, 255, 0.2);
+    background: rgba(0, 0, 255, 0.25);
 }
 
 .bg-red {
-    background: rgba(255, 0, 0, 0.2);
+    background: rgba(255, 0, 0, 0.25);
 }
 
 .bg-purple {
-    background: rgba(255, 0, 255, 0.2);
+    background: rgba(255, 0, 255, 0.25);
 }
 
 .bg-orange {
-    background: rgba(255, 165, 0, 0.2);
+    background: rgba(255, 165, 0, 0.25);
 }
 
 .card h2{
@@ -153,6 +154,7 @@ a:visited {
     border: none;
     font-family: inherit;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .button:hover {
