@@ -1,0 +1,20 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active { 
+    color: blue;
+}
+
+a:visited {
+    color: rgb(161, 88, 146)
+}
+
+a[href="https://gmail.com/"] {
+    font-style: italic;
+}
