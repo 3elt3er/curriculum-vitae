@@ -15,7 +15,7 @@
         <title>Adilgereev CV</title>
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="styles.css"/>
-        <link rel="stylesheet" href="stylesA.css"/>
+        <link rel="stylesheet" href="styles_links.css"/>
     </head>
     <body>
         <div class="container">
@@ -23,18 +23,18 @@
         
             
                    
-                    <img src="Me.jpg" alt="Ошибка отоброжении фотографии пользователя" class="PhotoMe"/>
+                    <img src="Me.jpg" alt="Ошибка отображения фотографии пользователя" id="PhotoMe"/>
                 
                 <div class="info-text">
                     <h1>Адилгереев Артем Максимович</h1>
-                    <p id="discription">Мужчина, 19 лет, родился 15 октября 2002</p>
+                    <p class="discription">Мужчина, 19 лет, родился 15 октября 2002</p>
                     <h2>Контакты:</h2>
                   <ul>
                     <li>+7(930)983-69-93</li>
                     <li><a href="https://gmail.com/"target="_blank">art.adilgereev@gmail.com</a></li>
                   </ul>
-                    <p id="discription">Москва, не готов к переезду, готов к командировкам за границу</p>
-                    <p id="discription">Указан примерный район поиска работы:</p>
+                    <p class="discription">Москва, не готов к переезду, готов к командировкам за границу</p>
+                    <p class="discription">Указан примерный район поиска работы:</p>
                     <a href="map.html"target="_blank">Показать карту</a>
                 </div>
             
@@ -52,6 +52,7 @@
         </ol>
         <p>Занятость: частичная занятость, проектная работа, полная занятость </p>
         <p>График работы: гибкий график, удаленная работа, работа в офисе</p>
+        <div class="box_salary"></div>
     </div>
         
 
@@ -167,6 +168,11 @@
         <input class="button" type="submit" value="Отправить">
     
      </form>
+    </div>
+    <div class="positioning">
+      <div class="button_fixed">
+         <img src="arrow_up.png" alt="Ошибка отображения стрелки навигации" id="arrow"/> <!-- блин думал можно без JS это сделать, оказалось нет :(, доделаю когда изучу JS) -->
+      </div>
     </div>
 </div>
 </body>
