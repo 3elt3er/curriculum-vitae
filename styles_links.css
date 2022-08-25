@@ -10,11 +10,11 @@ a:hover {
 
 
 a:visited {
-    color: rgb(161, 88, 146)
+    color: #727db1
 }
 
 a:active { 
-    color: rgb(255, 68, 68);
+    color: #ff4444;
 }
 
 a[href="https://gmail.com/"] {
