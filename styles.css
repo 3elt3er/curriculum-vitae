@@ -250,5 +250,28 @@ position: relative;
         width: 33%;
         height: 12%;
     }
+}
+@media (max-width:493px){
+    .box_salary{
+        background-color: #ff000040;
+        left: 33%;
+        top: 19%;
+        width: 33%;
+        height: 12%;
+    }
+}
+@media (max-width:476px){
+    .box_salary{
+        background-color: #ff000040;
+        left: 62%;
+        top: 19%;
+        width: 33%;
+        height: 12%;
+    }
+}
 
+@media (max-width:470px){
+    .box_salary{
+        background-color: #ff000000;
+    }
 }
