@@ -1,194 +1,211 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Thit is my curriculum vitae">
-        <meta name="keywords" content="html, css, curriculum vitae, Adilgereev Artem" >
-        <meta name="author" content="Artem Adilgereev"> 
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Thit is my curriculum vitae">
+    <meta name="keywords" content="html, css, curriculum vitae, Adilgereev Artem" >
+    <meta name="author" content="Artem Adilgereev"> 
 
-        <meta property="og:title" content="Curriculum vitae Adilgereev Artem">
-        <meta property="og:description" content="It's my fist project with using CSS and HTML">
-        <meta property="og:image" content="https://englex.ru/app/uploads/how-to-write-a-cv-1.png">
-        <meta property="og:url" content="https://3elt3er.github.io/curriculum-vitae/">
+    <meta property="og:title" content="Curriculum vitae Adilgereev Artem">
+    <meta property="og:description" content="It's my fist project with using CSS and HTML">
+    <meta property="og:image" content="https://englex.ru/app/uploads/how-to-write-a-cv-1.png">
+    <meta property="og:url" content="https://3elt3er.github.io/curriculum-vitae/">
 
-        <title>Adilgereev CV</title>
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="styles.css"/>
-        <link rel="stylesheet" href="styles_links.css"/>
-    </head>
-    <body>
-        <div class="container">
-        <div class="intro">          
-                    <img src="Me.jpg" alt="Ошибка отображения фотографии пользователя" id="PhotoMe"/>
-                
-                <div class="info-text">
-                    <h1>Адилгереев Артем Максимович</h1>
-                    <p class="discription">Мужчина, 19 лет, родился 15 октября 2002</p>
-                    <h2>Контакты:</h2>
-                    <ul>
-                      <li>+7(930)983-69-93</li>
-                      <li><a href="https://gmail.com/"target="_blank">art.adilgereev@gmail.com</a></li>
-                    </ul>
-                    <p class="discription">Москва, не готов к переезду, готов к командировкам за границу</p>
-                    <p class="discription">Указан примерный район поиска работы:</p>
-                    <a href="map.html"target="_blank">Показать карту</a>
-                </div>
+    <title>Adilgereev CV</title>
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles_links.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Карточка контактной информации -->
+      <div class="intro">          
+        <img
+          src="assets/Me.jpg" 
+          alt="Ошибка отображения фотографии пользователя" 
+          id="PhotoMe"
+        />
+        <div class="info-text">
+          <h1>Адилгереев Артем Максимович</h1>
+          <p class="description">Мужчина, 19 лет, родился 15 октября 2002</p>
+          <h2>Контакты:</h2>
+          <ul>
+            <li>+7(930)983-69-93</li>
+            <li><a href="https://gmail.com/" target="_blank">art.adilgereev@gmail.com</a></li>
+          </ul>
+          <p class="description">Москва, не готов к переезду, готов к командировкам за границу</p>
+          <p class="description">Указан примерный район поиска работы:</p>
+          <a href="map.html"target="_blank">Показать карту</a>
         </div>
-        
+      </div> 
 
-    <div class="card bg-dark-green">
-      <h2>Навигация</h2>
-      <ul class="list">
-        <li><a href = "#1">Должность</a></li>
-        <li><a href = "#2">Опыт работы</a></li>
-        <li><a href = "#3">Ключевые навыки</a></li>
-        <li><a href = "#4">Обо мне</a></li>
-        <li><a href = "#5">Образование</a></li>
-        <li><a href = "#6">Знание языков</a></li>
-        <li><a href = "#7">Связаться со мной</a></li>
-      </ul>
-    </div>
-        
+      <!-- Карточка навигации -->
+      <div class="card bg-dark-green">
+        <h2>Навигация</h2>
+        <ul class="list">
+          <li><a href = "#preferences">Должность</a></li>
+          <li><a href = "#work experience">Опыт работы</a></li>
+          <li><a href = "#skills">Ключевые навыки</a></li>
+          <li><a href = "#main info">Обо мне</a></li>
+          <li><a href = "#education">Образование</a></li>
+          <li><a href = "#languages">Знание языков</a></li>
+          <li><a href = "#feedback">Связаться со мной</a></li>
+        </ul>
+      </div>
 
-
-
-    <div class="card bg-blue" id="1">
+      <!-- Карточка предпочтений -->
+      <div class="card bg-blue" id="preferences">
         <h2>Front-end разработчик Typescript & Reactjs &nbsp;&nbsp;&nbsp; 100 000 руб.</h2>
         <p class="subtitle">Специализации:</p>
         <ol class="list">
-        <li>Программист, разработчик</li>
-        <li>Очень мощный чел</li>
+          <li>Программист, разработчик</li>
+          <li>Очень мощный чел</li>
         </ol>
         <p>Занятость: частичная занятость, проектная работа, полная занятость </p>
         <p>График работы: гибкий график, удаленная работа, работа в офисе</p>
+        <!-- Обучался позиционированю, поэтому пустой блок-->
         <div class="box_salary"></div>
-    </div>
-        
+      </div>
 
-    <div class="card bg-yellow" id="2" >    
+      <!-- Карточка опыта работы -->
+      <div class="card bg-yellow" id="work experience" >    
         <h2>Опыт работы</h2>
         <table class="table">
-           <tr>
+          <tr>
             <td class="subtitle">Июль 2018 - Июль 2018</td>
             <td>Ресторан Узбечка</td>
-           </tr>
-           <tr>
+          </tr>
+          <tr>
             <td>1 день</td>
             <td>Помощник оффицианта</td>
-           </tr>
-           <tr>
+          </tr>
+          <tr>
             <td></td>
             <td >Таскал тарелки на мойку, 1 раз подлил чай посетителю</td>
-           </tr>
-           <tr>
+          </tr>
+          <tr>
             <td class="subtitle">Июль 2021 - Август 2021</td>
             <td>Агенство связи Tele2</td>
-           </tr>
-           <tr>
+          </tr>
+          <tr>
             <td>2 месяца</td>
             <td>Менеджер по продажам</td>
-           </tr>
-           <tr>
+          </tr>
+          <tr>
             <td></td>
-            <td >Продавал услуги, телефоны и сим-карты. Работал в системе 1С.</td>
-           </tr>
-           <tr>
+            <td>Продавал услуги, телефоны и сим-карты. Работал в системе 1С.</td>
+          </tr>
+          <tr>
             <td class="subtitle">Июнь 2022 - настоящее время</td>
             <td>Университет МТУСИ</td>
-           </tr>
-           <tr>
+          </tr>
+          <tr>
             <td>2 месяца</td>
             <td>Специалист</td>
-           </tr>
-           <tr>
+          </tr>
+          <tr>
             <td></td>
             <td>Телемаркетинг. Работа в CRM системе, коммуникация с клиентами.</td>
-           </tr>
+          </tr>
         </table>
-    </div>
-        
-        <div class="card bg-purple" id="3">
+      </div>
+
+      <!-- Карточка ключевых навыков -->
+      <div class="card bg-purple" id="skills">
         <h2>Ключевые навыки</h2>
         <ul type="circle">
-        <li> C++</li>
-        <li> C#</li>
-        <li>Java </li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Visual Basic for Application</li>
-        <li>Git</li>
-        <li>ООП</li>
-        <li>QUDA</li>
-    </ul>
-</div>
-    
-    <div class="card bg-green" id="4" >
-    <h2>Обо мне</h2>
-    <span>Мой профиль на github:</span>
-    <a href="https://github.com/3elt3er/" target="_blank">Нажми</a></li>
-    <h3>Опыт:</h3>
-    <p>Начинал изучать языки программирования с html в 13 лет на дополнительных курсах. В 14 пошёл на курсы по Java, 
-    на котором у меня был первый проект - игра. После пошёл на курсы по веб-дизайну, на которых создавал сайты через 
-    макеты. В дальнейшем занимался программированием только в формате школьных заданий. После, были проекты в унивеситете 
-     - создание базы данных для поликлиники - учёт людей с прививками и флюрографией и т.д. устал писать какой я хороший.</p>
-    </div>
-     
-     <div class="card bg-orange" id="5">
-     <h2>Высшее образование(Бакалавр)</h2>
-     <table>
-        <tr>
+          <li> C++</li>
+          <li> C#</li>
+          <li>Java </li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Visual Basic for Application</li>
+          <li>Git</li>
+          <li>ООП</li>
+          <li>QUDA</li>
+        </ul>
+      </div>
+
+      <!-- Карточка основной информации -->
+      <div class="card bg-green" id="main info">
+        <h2>Обо мне</h2>
+        <span>Мой профиль на github:</span>
+        <a href="https://github.com/3elt3er/" target="_blank">Нажми</a></li>
+        <h3>Опыт:</h3>
+        <p>Начинал изучать языки программирования с html в 13 лет на дополнительных курсах. 
+          В 14 пошёл на курсы по Java, на котором у меня был первый проект - игра.
+          После пошёл на курсы по веб-дизайну, на которых создавал сайты через макеты.
+          В дальнейшем занимался программированием только в формате школьных заданий. 
+          После, были проекты в унивеситете - создание базы данных для поликлиники - учёт записей.
+        </p>
+      </div>
+      
+      <!-- Карточка образования -->
+      <div class="card bg-orange" id="education">
+        <h2>Высшее образование(Бакалавр)</h2>
+        <table>
+          <tr>
             <td>2024</td>
             <td>Московский технический университет связи и информатики, Москва</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td></td>
             <td>Кибернетика и информационная безопасность, Информационная безопасность</td>
-        </tr>
-     </table>
-    </div>
-     
-     <div class="card bg-red" id="6">
-     <h2>Знание языков</h2>
-     <p>Русский - Родной</p>
-     <p>Английский - В2 - Самодостаточное</p>
-     <div class="positioning">
-      <img src="flag_ru.png" alt="Ошибка отображения флага россии" id="flag_rus"/>
-    </div>
-     </div>
-     
-     <div class="contact" id="7">
-     <h2>Связаться со мной</h2>
-     <form action="/">
-        <div class="row">
-    <div class="form-group">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id ="name"
-        placeholder="Введите ваше имя...">
-    </div>
-      <div class="form-group">
-        <label for="email">Ваш Email:</label>
-        <input type="email" id="email" placeholder="Введите email...">
+          </tr>
+        </table>
       </div>
-    </div>
-      <div class="form-group">
-    
-        <label for="text">Ваше сообщение:</label>
-        <textarea id="text" cols="50" rows="5"></textarea>
-      </div>
-    
-        <input class="button" type="submit" value="Отправить">
-    
-     </form>
-    </div>
-    <div class="positioning">
-      <div class="button_fixed">
-        <a href="#PhotoMe">
-         <img src="arrow_up.png" alt="Ошибка отображения стрелки навигации" id="arrow"/> 
-        </a>
+      
+      <!-- Карточка знания языков -->
+      <div class="card bg-red" id="languages">
+        <h2>Знание языков</h2>
+        <p>Русский - Родной</p>
+        <p>Английский - В2 - Самодостаточное</p>
+        <div class="box-pos">
+          <img 
+            src="/assets/flag_ru.png" 
+            alt="Ошибка отображения флага россии" 
+            id="flag_rus"
+          />
         </div>
+      </div>
+      
+      <!-- Карточка обратной связи -->
+      <div class="contact" id="feedback">
+        <h2>Связаться со мной</h2>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id ="name"
+              placeholder="Введите ваше имя...">
+            </div>
+            <div class="form-group">
+              <label for="email">Ваш Email:</label>
+              <input type="email" id="email" placeholder="Введите email...">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="text">Ваше сообщение:</label>
+            <textarea id="text" cols="50" rows="5"></textarea>
+          </div>
+          <input class="button" type="submit" value="Отправить">
+        </form>
+      </div>
+
+      <!-- Также обучение позиционирования, стрелочка -->
+      <div class="positioning">
+        <div class="button_fixed">
+          <a href="#PhotoMe">
+            <img 
+              src="/assets/arrow-up.svg" 
+              alt="Ошибка отображения стрелки навигации" 
+              id="arrow"
+            />
+          </a>
+        </div>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
