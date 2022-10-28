@@ -1,0 +1,214 @@
+@font-face 
+    font-family: Roboto Slab
+    src: url('/fonts/RobotoSlab-VariableFont_wght.ttf')
+
+body 
+    background-image: url(/assets/dust_scratches.webp)
+    font: normal 16px 'Roboto Slab', serif
+
+#PhotoMe
+    width: 350px
+    border-radius: 20px
+    box-shadow: 4px 4px 14px rgba(0,0,0,0.25)
+
+.intro 
+    margin-bottom: 20px
+    grid-template-columns: 350px 400px
+    display: grid
+
+.description
+    margin: 0
+    color: #86898f
+    font-style: italic
+
+.container
+    max-width: 750px
+    margin: auto
+    padding-top: 30px
+    padding-bottom: 30px
+
+.card
+    padding: 15px 20px
+    margin-bottom: 20px
+    border-radius: 20px
+    box-shadow: 4px 4px 14px #0000001a
+
+.bg-blue 
+    position: relative
+    background: #0000ff40
+
+.bg-dark-green 
+    background: #00ff006c
+
+.bg-green 
+    background: #00ff0040
+
+.bg-yellow 
+    background: #ffff0040
+
+.bg-red 
+    background: #ff000040
+
+.bg-purple 
+    background: #ff00ff40
+
+.bg-orange 
+    background: #ffa50040
+
+.card h2
+    margin-bottom: 10px
+
+.list
+    padding: 0 20px
+
+.table
+    width: 100%
+
+.table td
+    padding-bottom: 10px
+
+.table tr:nth-child(3), .table tr:nth-child(6), .table tr:nth-child(9)  
+    color: #723333
+
+.contact h2
+    text-align: center
+
+.form-group label 
+    display: block
+    color: gray
+    font-size: 14px
+
+.form-group input, .form-group textarea 
+    width: 100%
+    padding: 15px 0 10px
+    box-sizing: border-box
+    border: none
+    border-bottom: 1px solid #ccc
+    outline: none
+    background: transparent
+    color: #000
+    font-family: inherit
+
+.row 
+    margin-bottom: 20px
+    display: flex
+
+.row > .form-group 
+    width: 50%
+
+.row > .form-group:first-child 
+    margin-right: 20px
+
+.info-text 
+    margin-left: 40px
+
+.button 
+    padding: 15px 20px
+    border: 1px solid transparent
+    border-radius: 20px
+    margin-top: 10px
+    cursor: pointer
+    color: #fff
+    background-color: #000
+    font-family: inherit
+
+.button:hover 
+    opacity: 0.9
+    outline: none
+    border: 1px solid #22989c
+
+.button:focus-visible 
+    border: 1px solid #00b700
+    outline: none
+
+.subtitle 
+    font-weight: bold
+
+.box-pos
+    position: relative
+
+.button_fixed
+    position: fixed
+    bottom: 5%
+    right: 5%
+    width: 50px
+    height: 50px
+
+#arrow
+    width: 45px
+    height: 45px
+    background: none
+
+.box_salary
+    position: absolute
+    right: 50px
+    height: 18%
+    width: 20%
+    top: 27px
+    border-radius: 20px
+    background-color: #ff000040
+
+#flag_rus
+    position: absolute
+    width: 40px
+    bottom: 49px
+    left: 150px
+
+@media (max-width: 1000px) 
+    .intro 
+        text-align: center
+        padding: 20px
+        display: block
+    
+@media (max-width:784px)
+    .box_salary
+        background-color: #ff000000
+    
+@media (max-width:650px)
+    .box_salary
+        left: 2%
+        top: 20%
+        width: 25%
+        height: 12%
+        background-color: #ff000040
+    
+@media (max-width:609px)
+    .box_salary
+        left: 7%
+        background-color: #ff000040
+    
+@media (max-width:583px)
+    .box_salary
+        left: 22.5%
+        top: 19%
+        width: 31%
+        height: 12%
+        background-color: #ff000040
+    
+@media (max-width:530px)
+    .box_salary
+        left: 25%
+        top: 19%
+        width: 33%
+        height: 12%
+        background-color: #ff000040
+    
+@media (max-width:493px)
+    .box_salary
+        left: 33%
+        top: 19%
+        width: 33%
+        height: 12%
+        background-color: #ff000040
+    
+@media (max-width:476px)
+    .box_salary
+        left: 62%
+        top: 19%
+        width: 33%
+        height: 12%
+        background-color: #ff000040
+    
+@media (max-width:470px)
+    .box_salary
+        background-color: #ff000000
