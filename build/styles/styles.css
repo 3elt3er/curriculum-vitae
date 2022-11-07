@@ -10,12 +10,11 @@ body {
 #PhotoMe {
   width: 350px;
   border-radius: 20px;
-  -webkit-box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.2509803922);
+          box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.2509803922);
 }
 
 .intro {
-  margin-bottom: 20px;
   -ms-grid-columns: 350px 400px;
   grid-template-columns: 350px 400px;
   display: -ms-grid;
@@ -44,18 +43,28 @@ body {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 750px;
   margin: auto;
   padding-top: 30px;
   padding-bottom: 30px;
+  gap: 20px;
 }
 
 .card {
-  padding: 10px 30px;
-  margin-bottom: 20px;
+  padding: 10px 30px 20px;
   border-radius: 20px;
   -webkit-box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1019607843);
           box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1019607843);
+}
+.card h2 {
+  margin-bottom: 10px;
 }
 
 .bg-blue {
@@ -89,10 +98,6 @@ body {
   background: rgba(255, 165, 0, 0.2509803922);
 }
 
-.card h2 {
-  margin-bottom: 10px;
-}
-
 .list {
   padding: 0 20px;
 }
@@ -100,11 +105,9 @@ body {
 .table {
   width: 100%;
 }
-
 .table td {
   padding-bottom: 10px;
 }
-
 .table tr:nth-child(3), .table tr:nth-child(6), .table tr:nth-child(9) {
   color: #723333;
 }
@@ -118,7 +121,6 @@ body {
   color: gray;
   font-size: 14px;
 }
-
 .form-group input, .form-group textarea {
   width: 100%;
   padding: 15px 0 10px;
@@ -138,11 +140,9 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-
 .row > .form-group {
   width: 50%;
 }
-
 .row > .form-group:first-child {
   margin-right: 20px;
 }
@@ -161,13 +161,11 @@ body {
   background-color: #000;
   font-family: inherit;
 }
-
 .button:hover {
   opacity: 0.9;
   outline: none;
   border: 1px solid #22989c;
 }
-
 .button:focus-visible {
   border: 1px solid #00b700;
   outline: none;
@@ -205,7 +203,12 @@ body {
 @media (max-width: 1400px) {
   .intro {
     text-align: center;
-    padding: 20px;
     display: block;
+  }
+
+  .bg-dark-green {
+    position: inherit;
+    margin-top: 10px;
+    text-align: left;
   }
 }

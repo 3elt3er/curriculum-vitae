@@ -9,10 +9,9 @@ body
 #PhotoMe
     width: 350px
     border-radius: 20px
-    box-shadow: 4px 4px 14px rgba(0,0,0,0.25)
+    box-shadow: 4px 4px 14px #00000040
 
 .intro 
-    margin-bottom: 20px
     grid-template-columns: 350px 400px
     display: grid
 
@@ -31,16 +30,21 @@ body
     background-color: #ff000040
  
 .container
+    display: flex
+    flex-direction: column
     max-width: 750px
     margin: auto
     padding-top: 30px
     padding-bottom: 30px
+    gap: 20px
 
 .card
-    padding: 10px 30px
-    margin-bottom: 20px
+    padding: 10px 30px 20px
     border-radius: 20px
     box-shadow: 4px 4px 14px #0000001a
+
+    h2
+        margin-bottom: 10px
 
 .bg-blue 
     position: relative
@@ -66,53 +70,51 @@ body
 .bg-orange 
     background: #ffa50040
 
-.card h2
-    margin-bottom: 10px
-
 .list
     padding: 0 20px
 
 .table
     width: 100%
 
-.table td
-    padding-bottom: 10px
+    td
+        padding-bottom: 10px
 
-.table tr:nth-child(3), .table tr:nth-child(6), .table tr:nth-child(9)  
-    color: #723333
+    & tr:nth-child(3), tr:nth-child(6), tr:nth-child(9)
+        color: #723333
 
 .contact h2
     text-align: center
 
-.form-group label 
-    display: block
-    color: gray
-    font-size: 14px
+.form-group 
+    & label 
+        display: block
+        color: gray
+        font-size: 14px
 
-.form-group input, .form-group textarea 
-    width: 100%
-    padding: 15px 0 10px
-    box-sizing: border-box
-    border: none
-    border-bottom: 1px solid #ccc
-    outline: none
-    background: transparent
-    color: #000
-    font-family: inherit
+    & input, & textarea
+        width: 100%
+        padding: 15px 0 10px
+        box-sizing: border-box
+        border: none
+        border-bottom: 1px solid #ccc
+        outline: none
+        background: transparent
+        color: #000
+        font-family: inherit
 
 .row 
     margin-bottom: 20px
     display: flex
 
-.row > .form-group 
-    width: 50%
+    & > .form-group 
+        width: 50%
 
-.row > .form-group:first-child 
-    margin-right: 20px
+    & > .form-group:first-child 
+        margin-right: 20px
 
 .info-text 
     margin-left: 40px
-
+    
 .button 
     padding: 15px 20px
     border: 1px solid transparent
@@ -123,14 +125,14 @@ body
     background-color: #000
     font-family: inherit
 
-.button:hover 
-    opacity: 0.9
-    outline: none
-    border: 1px solid #22989c
+    &:hover 
+        opacity: 0.9
+        outline: none
+        border: 1px solid #22989c
 
-.button:focus-visible 
-    border: 1px solid #00b700
-    outline: none
+    &:focus-visible 
+        border: 1px solid #00b700
+        outline: none
 
 .subtitle 
     font-weight: bold
@@ -159,5 +161,9 @@ body
 @media (max-width: 1400px) 
     .intro 
         text-align: center
-        padding: 20px
         display: block
+        
+    .bg-dark-green
+        position: inherit
+        margin-top: 10px
+        text-align: left
