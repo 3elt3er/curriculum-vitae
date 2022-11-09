@@ -1,0 +1,197 @@
+@font-face {
+  font-family: Roboto Slab;
+  src: url("/src/assets/fonts/RobotoSlab-VariableFont_wght.ttf");
+}
+body {
+  background-image: url("/src/assets/dust_scratches.webp");
+  font: normal 16px "Roboto Slab", serif;
+}
+
+#PhotoMe {
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.2509803922);
+}
+
+.intro {
+  grid-template-columns: 350px 400px;
+  display: grid;
+}
+
+.description {
+  margin: 0;
+  color: #86898f;
+  font-style: italic;
+}
+
+.profession {
+  display: flex;
+  justify-content: space-between;
+}
+
+.salary {
+  padding: 4px;
+  border-radius: 20px;
+  background-color: rgba(255, 0, 0, 0.2509803922);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 750px;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  gap: 20px;
+}
+
+.card {
+  padding: 10px 30px 20px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1019607843);
+}
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.bg-blue {
+  position: relative;
+  background: rgba(0, 0, 255, 0.2509803922);
+}
+
+.bg-dark-green {
+  position: fixed;
+  left: 4%;
+  background: rgba(0, 255, 0, 0.4235294118);
+}
+
+.bg-green {
+  background: rgba(0, 255, 0, 0.2509803922);
+}
+
+.bg-yellow {
+  background: rgba(255, 255, 0, 0.2509803922);
+}
+
+.bg-red {
+  background: rgba(255, 0, 0, 0.2509803922);
+}
+
+.bg-purple {
+  background: rgba(255, 0, 255, 0.2509803922);
+}
+
+.bg-orange {
+  background: rgba(255, 165, 0, 0.2509803922);
+}
+
+.list {
+  padding: 0 20px;
+}
+
+.table {
+  width: 100%;
+}
+.table td {
+  padding-bottom: 10px;
+}
+.table tr:nth-child(3), .table tr:nth-child(6), .table tr:nth-child(9) {
+  color: #723333;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  color: gray;
+  font-size: 14px;
+}
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 15px 0 10px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  background: transparent;
+  color: #000;
+  font-family: inherit;
+}
+
+.row {
+  margin-bottom: 20px;
+  display: flex;
+}
+.row > .form-group {
+  width: 50%;
+}
+.row > .form-group:first-child {
+  margin-right: 20px;
+}
+
+.info-text {
+  margin-left: 40px;
+}
+
+.button {
+  padding: 15px 20px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+  font-family: inherit;
+}
+.button:hover {
+  opacity: 0.9;
+  outline: none;
+  border: 1px solid #22989c;
+}
+.button:focus-visible {
+  border: 1px solid #00b700;
+  outline: none;
+}
+
+.subtitle {
+  font-weight: bold;
+}
+
+.box-pos {
+  position: relative;
+}
+
+.button_fixed {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+}
+
+#arrow {
+  width: 45px;
+  height: 45px;
+  background: none;
+}
+
+#flag_rus {
+  position: absolute;
+  width: 40px;
+  bottom: 49px;
+  left: 150px;
+}
+
+@media (max-width: 1400px) {
+  .intro {
+    text-align: center;
+    display: block;
+  }
+  .bg-dark-green {
+    position: inherit;
+    margin-top: 10px;
+    text-align: left;
+  }
+}
