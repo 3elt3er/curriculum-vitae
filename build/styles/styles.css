@@ -1,23 +1,20 @@
 @font-face {
   font-family: Roboto Slab;
-  src: url("/build/assets/fonts/RobotoSlab-VariableFont_wght.ttf");
+  src: url("/src/assets/fonts/RobotoSlab-VariableFont_wght.ttf");
 }
 body {
-  background-image: url("/build/assets/dust_scratches.webp");
+  background-image: url("/src/assets/dust_scratches.webp");
   font: normal 16px "Roboto Slab", serif;
 }
 
 #PhotoMe {
   width: 350px;
   border-radius: 20px;
-  -webkit-box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.2509803922);
-          box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.2509803922);
 }
 
 .intro {
-  -ms-grid-columns: 350px 400px;
   grid-template-columns: 350px 400px;
-  display: -ms-grid;
   display: grid;
 }
 
@@ -28,12 +25,8 @@ body {
 }
 
 .profession {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .salary {
@@ -43,13 +36,8 @@ body {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   max-width: 750px;
   margin: auto;
   padding-top: 30px;
@@ -60,8 +48,7 @@ body {
 .card {
   padding: 10px 30px 20px;
   border-radius: 20px;
-  -webkit-box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1019607843);
-          box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1019607843);
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1019607843);
 }
 .card h2 {
   margin-bottom: 10px;
@@ -124,8 +111,7 @@ body {
 .form-group input, .form-group textarea {
   width: 100%;
   padding: 15px 0 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #ccc;
   outline: none;
@@ -136,8 +122,6 @@ body {
 
 .row {
   margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .row > .form-group {
@@ -205,7 +189,6 @@ body {
     text-align: center;
     display: block;
   }
-
   .bg-dark-green {
     position: inherit;
     margin-top: 10px;
